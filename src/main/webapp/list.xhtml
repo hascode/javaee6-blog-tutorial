@@ -27,9 +27,9 @@
 							<h:outputText value="#{entry.title}" />
 						</f:facet>
 						<h:outputText value="#{i18n.author}: #{entry.author}" />
-						<h:panelGroup>
+						<h:panelGroup id="pGroup">
 							<h:outputText value="#{entry.content}" />
-							<p:contextMenu>
+							<p:contextMenu  for="pGroup">
 								<p:menuitem value="#{i18n.delete}"
 									actionListener="#{blogEntryBean.delete(entry)}" update="@form" />
 							</p:contextMenu>
