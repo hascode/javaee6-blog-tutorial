@@ -37,7 +37,7 @@ public class BlogEntry implements Serializable {
 
 	@Past
 	@Temporal(TemporalType.TIMESTAMP)
-	private Date				created;
+	private Date				created				= new Date();
 
 	@PrePersist
 	private void onCreate() {
